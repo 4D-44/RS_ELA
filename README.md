@@ -12,4 +12,6 @@ Ans: O(√n)
 Exp: The step is squaring itself, so time complexity is √n
 
 ### 2
-Exp: ~~i cant do ts gng 🥀~~
+Exp:
+- Learnt how to declare arrays as arraylists using AI
+- 
