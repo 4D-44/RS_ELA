@@ -4,9 +4,11 @@ The repo I made for my Experiential Learning Activity (Competitive Problem Solvi
 ## Assignment 1 solution methods
 ### 1a
 Ans: O(nlogn)
+
 Exp: 
 ### 1b
 Ans: O(√n)
+
 Exp: 
 
 ### 2
