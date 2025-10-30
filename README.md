@@ -7,6 +7,7 @@ Ans: O(nlogn)
 Exp: 
 ### 1b
 Ans: O(√n)
-Exp: 
+Exp: gorilla
+
 ###2
 Exp: ~~I killed myself~~ 
