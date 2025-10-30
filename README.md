@@ -5,11 +5,11 @@ The repo I made for my Experiential Learning Activity (Competitive Problem Solvi
 ### 1a
 Ans: O(nlogn)
 
-Exp: 
+Exp: Outer loop runs n * 1/2 times, so O(n). Inner loop runs ~~√n times, so O(√n).~~ logn times because of the step being a product of 2. Therefore, final time complexity: n*logn
 ### 1b
 Ans: O(√n)
 
-Exp: 
+Exp: The step is squaring itself, so time complexity is √n
 
 ### 2
-Exp: ~~I killed myself~~ 
+Exp: ~~i cant do ts gng 🥀~~
