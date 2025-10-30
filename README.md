@@ -20,7 +20,7 @@ Exp:
 
 The technique I found out is (pseudo code below):
 1. Take 2 idx values: l = farthest left, r = farthest right
-2. Area = (whichever is smallest between l and r) * (distance from l to r)
+2. Area = (whichever is smallest between [l] and [r]) * (distance from l to r)
 3. If [l] > [r] then r moves backwards. Else l moves forwards
 4. Loop from 2 as long as l < r
 5. (Step 1.5) Only update Area if new area > old area
