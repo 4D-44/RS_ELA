@@ -25,3 +25,5 @@ The technique I found out is (pseudo code below):
 4. Loop from 2 as long as l < r
 5. (Step 1.5) Only update Area if new area > old area
 6. Exit loop and return area
+
+## Assignment 2 solution methods
