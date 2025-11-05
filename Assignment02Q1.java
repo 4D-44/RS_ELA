@@ -15,7 +15,7 @@ public class Assignment02Q1 {
 
 class Node {
     int data;
-    Node next = null, prev = null;
+    Node next = null;
     Node head = null, tail = null;
     String errOne = "Unable to comply; only one element present";
     public Node(int thing) {
@@ -29,7 +29,6 @@ class Node {
         while (kore != null) {
             if (kore.next == null) {
                 kore.next = arata;
-                arata.prev = kore;
                 tail = arata;
                 System.out.println("New tail: " + thing); // debugging
                 break;
@@ -59,10 +58,9 @@ class Node {
         if (kore.next == null) // one element
             System.out.println(errOne);
         else {
-            kore = kore.next;
-            System.out.println("Removing head: " + head.data);
-            kore.prev = null;
-            head = kore;
+            System.out.println("Removing head: " + this.data);
+            this.data = this.next.data;
+            this.next = this.next.next;
         }
     }
 
