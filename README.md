@@ -27,3 +27,14 @@ The technique I found out is (pseudo code below):
 6. Exit loop and return area
 
 ## Assignment 2 solution methods
+### 1a
+Exp:
+### 1b
+Exp:
+### 1c
+Exp:
+### 1d
+Exp:
+
+### 2
+Exp: Refer to 2 of Assignment 1
