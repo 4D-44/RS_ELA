@@ -35,6 +35,8 @@ Exp:
 Exp:
 ### 1d
 Exp:
+### 1e
+Exp: 
 
 ### 2
 Exp: Refer to 2 of Assignment 1
