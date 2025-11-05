@@ -25,3 +25,18 @@ The technique I found out is (pseudo code below):
 4. Loop from 2 as long as l < r
 5. (Step 1.5) Only update Area if new area > old area
 6. Exit loop and return area
+
+## Assignment 2 solution methods
+### 1a
+Exp: Traverse the linkedList till the end, connect newItem (new = arata[新]) to current.next (current = kore [これ]), and link newItem.prev to current (Which was the last item before the operation)
+### 1b
+Exp: Traverse till 2nd last element. Set 2nd last element's ".next" to null (We can't set current to null directly because it is a local variable with a copy of the reference, not the actual node itself. So we must refer to the .next to access it directly). Also handle case where node only has one element.
+### 1c
+Exp: Refer to `this` with "current". After handling case for 1 node, for multiple nodes: Disguising 1st node as 2nd node, remove link from 2nd node, and link 1st node with 3rd node.
+### 1d
+Exp: 
+### 1e
+Exp: 
+
+### 2
+Exp: Refer to 2 of Assignment 1
