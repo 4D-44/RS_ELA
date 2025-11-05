@@ -28,13 +28,13 @@ The technique I found out is (pseudo code below):
 
 ## Assignment 2 solution methods
 ### 1a
-Exp:
+Exp: Traverse the linkedList till the end, connect newItem (new = arata[新]) to current.next (current = kore [これ]), and link newItem.prev to current (Which was the last item before the operation)
 ### 1b
-Exp:
+Exp: Traverse till 2nd last element. Set 2nd last element's ".next" to null (We can't set current to null directly because it is a local variable with a copy of the reference, not the actual node itself. So we must refer to the .next to access it directly). Also handle case where node only has one element.
 ### 1c
-Exp:
+Exp: Refer to `this` with "current". After handling case for 1 node, for multiple nodes: Disguising 1st node as 2nd node, remove link from 2nd node, and link 1st node with 3rd node.
 ### 1d
-Exp:
+Exp: 
 ### 1e
 Exp: 
 
