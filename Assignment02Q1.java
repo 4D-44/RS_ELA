@@ -63,6 +63,12 @@ class Node {
             this.next = this.next.next;
         }
     }
+    public void reverse() {
+
+    }
+    public void removeFromEnd(int idx) {
+        
+    }
 
     @Override
     public String toString() {
