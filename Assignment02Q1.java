@@ -1,7 +1,8 @@
 public class Assignment02Q1 {
     public static void main(String[] args) {
-        Node list = new Node(5);
+        Node list = new Node(1);
         System.out.println(list);
+        list.addLast(5);
         list.addLast(10);
         list.addLast(15);
         list.addLast(155);
@@ -15,7 +16,9 @@ public class Assignment02Q1 {
         list.addLast(25);
         list.addLast(30);
         System.out.println(list);
-        list.removeFromEnd(2);
+        list.reverse();
+        System.out.println(list);
+        list.removeFromEnd(4);
         System.out.println(list);
     }
 }
@@ -74,7 +77,21 @@ class Node {
         }
     }
     public void reverse() {
-
+        Node kore = this;
+        Node temp = null;
+        while (kore != null) {
+            if (kore.prev == null) 
+                tail = kore;
+            else if (kore.next == null) 
+                head = kore;
+            temp = kore.next;
+            kore.next = kore.prev;
+            kore.prev = temp;
+            kore = kore.prev;
+        }
+        
+        System.out.printf("New head: %d, new tail: %d\n",
+        head.data, tail.data);
     }
     public void removeFromEnd(int idx) {
         Node target = tail;
@@ -95,7 +112,7 @@ class Node {
     @Override
     public String toString() {
         String res = "";
-        Node kore = this;
+        Node kore = head;
         while (kore != null) {
             res += kore.next != null ? kore.data + "->" : kore.data;
             kore = kore.next;
