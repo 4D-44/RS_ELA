@@ -10,13 +10,20 @@ public class Assignment02Q1 {
         System.out.println(list);
         list.removeFirst();
         System.out.println(list);
+        list.addLast(20);
+        list.addLast(35);
+        list.addLast(25);
+        list.addLast(30);
+        System.out.println(list);
+        list.removeFromEnd(2);
+        System.out.println(list);
     }
 }
 
 class Node {
     int data;
-    Node next = null;
-    Node head = null, tail = null;
+    Node next = null, prev = null;
+    Node head, tail = null;
     String errOne = "Unable to comply; only one element present";
     public Node(int thing) {
         data = thing;
@@ -25,10 +32,11 @@ class Node {
 
     public void addLast(int thing) {
         Node arata = new Node(thing);
-        Node kore = this;
+        Node kore = this; // temp node used to traverse the list
         while (kore != null) {
             if (kore.next == null) {
                 kore.next = arata;
+                arata.prev = kore;
                 tail = arata;
                 System.out.println("New tail: " + thing); // debugging
                 break;
@@ -42,6 +50,7 @@ class Node {
             if (kore.next != null) {
                 if (kore.next.next == null) {
                     System.out.println("Removing tail: " + tail.data);
+                    kore.next.prev = null; // unnecessary but lol
                     kore.next = null;
                     tail = kore;
                     break;
@@ -61,13 +70,26 @@ class Node {
             System.out.println("Removing head: " + this.data);
             this.data = this.next.data;
             this.next = this.next.next;
+            this.next.prev = this;
         }
     }
     public void reverse() {
 
     }
     public void removeFromEnd(int idx) {
-        
+        Node target = tail;
+        for (int i = 0; i < idx; i++) {
+            target = target.prev;
+        }
+        if (target == head)
+            removeFirst();
+        else if (target == tail)
+            removeLast();
+        else {
+            System.out.println("Removing: " + target.data);
+            target.prev.next = target.next;
+            target.next.prev = target.prev;
+        }
     }
 
     @Override
