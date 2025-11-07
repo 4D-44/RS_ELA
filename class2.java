@@ -13,7 +13,7 @@ public class class2 {
     // Pros: We can access first and last elements instantly
     // Cons: We cannot access middle elements instantly, we have to traverse from head/tail to that element
     public static void main(String[] args) {
-        Node list = new Node(10);
+        Node list = new Node(10); // bhul hoise lol
         list.addFirst(50);
         list.addFirst(40);
         list.addFirst(30);
