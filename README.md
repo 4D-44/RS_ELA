@@ -34,9 +34,9 @@ Exp: Traverse till 2nd last element. Set 2nd last element's ".next" to null (We 
 ### 1c
 Exp: Refer to `this` with "current". After handling case for 1 node, for multiple nodes: Disguising 1st node as 2nd node, remove link from 2nd node, and link 1st node with 3rd node.
 ### 1d
-Exp: 
+Exp: First see if current.next is null (tail); set that to head, then vice versa. Then use a temp variable to swap each node's prev and next, then traverse throughout the list **using ".prev"**
 ### 1e
-Exp: 
+Exp: Turned linkedList into doubly linked list for ease in solving problem. Starting from tail, go to ".prev" in a for loop where i = 1, idx, and idx is the parameter for the function. Remove next link to target node from previous node, and remove prev link to target node from next node
 
 ### 2
 Exp: Refer to 2 of Assignment 1
