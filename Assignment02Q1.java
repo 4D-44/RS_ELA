@@ -78,7 +78,7 @@ class Node {
     }
     public void reverse() {
         Node kore = this;
-        Node temp = null;
+        Node temp;
         while (kore != null) {
             if (kore.prev == null) 
                 tail = kore;
