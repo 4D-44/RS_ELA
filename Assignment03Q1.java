@@ -6,8 +6,8 @@ public class Assignment03Q1 {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         Solution a = new Solution();
+
         System.out.println(a.isValid(s));
-        System.out.println("cake");
     }
 }
 
