@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Assignment03Q1 {
     public static void main(String[] args) {
-        System.out.println("Enter the string: ");
+        System.out.println("Enter the string with parentheses: ");
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         Solution a = new Solution();
@@ -15,6 +15,8 @@ class Solution {
     public boolean isValid(String s) {
         boolean bool = false;
         
+
+
         return bool;
     }
 }

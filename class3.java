@@ -38,7 +38,7 @@ public class class3 {
         System.out.println(s);
         System.out.println();
 
-        // Problem reverse a string using a stack
+        // Problem: Reverse a string using a stack
         // Sol: By LIFO, just put a string in a stack, then take it out. It's already in reverse
 
         // Problem: Why do we do encapsulation? Ok so you use getter and setter, so how does that protect it? -- someIT Solutions
