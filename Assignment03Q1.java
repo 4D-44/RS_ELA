@@ -8,6 +8,8 @@ public class Assignment03Q1 {
         Solution a = new Solution();
 
         System.out.println(a.isValid(s));
+
+        sc.close();
     }
 }
 
