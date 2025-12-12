@@ -84,5 +84,7 @@ public class class5 {
     Your supervisors will NOT help you with your research. Maybe if they're really good, they might help you publish your thesis, but no more than that
 
     * CISCO or something: if you get CGPA 4 in CSE421, the department head of CSE will give you a full scholarship for CISCO or smth. Very important for cyber security
+
+    * Btw BracU lecturers get tons of salary 💀 even as a contractual lecturer, you get around 20k per credit, and can take 10.5 creds max. So like damb
     */
 }
